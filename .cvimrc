@@ -1,0 +1,2 @@
+map <Space>h :pintab<CR>
+map <Space>l :unpintab<CR>
