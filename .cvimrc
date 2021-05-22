@@ -1,2 +1,13 @@
-map <Space>h :pintab<CR>
-map <Space>l :unpintab<CR>
+
+map <Space>j goBack
+map <Space>k goForward
+map <Space>h previousTab
+map <Space>l nextTab
+
+
+map <Space>fe :buffer<Space>
+map <Space>fc closeTab
+map <Space>fd closeTabsToRight
+map <Space>fb :bookmarks<Space>
+map <Space>ff  :tabnew<Space>
+
