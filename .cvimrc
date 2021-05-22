@@ -4,10 +4,18 @@ map <Space>k goForward
 map <Space>h previousTab
 map <Space>l nextTab
 
+map [ scrollPageUp
+map ] scrollPageDown
+
 
 map <Space>fe :buffer<Space>
 map <Space>fc closeTab
 map <Space>fd closeTabsToRight
-map <Space>fb :bookmarks<Space>
-map <Space>ff  :tabnew<Space>
+
+map <Space>b :bookmarks<Space>
+map <Space><Space>  :tabnew<Space>
+map <Space>p :pintab<CR>
+map <Space>n :unpintab<CR>
+map <Space>m createBookmark
+
 
