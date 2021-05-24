@@ -3,16 +3,19 @@ map <Space>j goBack
 map <Space>k goForward
 map <Space>h previousTab
 map <Space>l nextTab
+map <Space>o :tabnew<Space> b
+
 
 map [ scrollPageUp
 map ] scrollPageDown
+map R reloadTabUncached
 
 
 map <Space>fe :buffer<Space>
 map <Space>fc closeTab
 map <Space>fd closeTabsToRight
 
-map <Space>b :bookmarks<Space>
+map <Space>t :bookmarks!<Space>
 map <Space><Space>  :tabnew<Space>
 map <Space>p :pintab<CR>
 map <Space>n :unpintab<CR>
