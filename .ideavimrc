@@ -1,0 +1,95 @@
+" ============VIM===========
+inoremap jk  <Esc>
+nnoremap sh   ^
+nnoremap sl   $
+nnoremap [   {
+nnoremap ]   }
+" Redo
+nnoremap U   <C-r>
+nnoremap e   :action Console.Jdbc.Execute<CR>
+nnoremap vir :action RenameElement<CR>
+
+" ============LEADER===========
+" 重命名
+" nnore <leader>r :action RenameElement<CR>
+" 格式化当前文件
+nnoremap <leader>f :action ReformatCode<CR><esc>
+nnoremap <leader>q :action QuickJavaDoc<CR>
+nnoremap <leader>- :action CollapseRegion<CR>
+nnoremap <leader>= :action ExpandRegion<CR>
+nnoremap <leader>_ :action CollapseAllRegions<CR>
+nnoremap <leader>+ :action ExpandAllRegions<CR>
+
+" ============SPACE===========
+nnoremap <space>h :action Back<CR>
+nnoremap <space>l :action Forward<CR>
+nnoremap <space>o :action NextTab<CR>
+nnoremap <space>- :action SplitHorizontally<CR>
+nnoremap <space>\ :action SplitVertically<CR>
+nnoremap <space>b :action ToggleLineBreakpoint<CR>
+nnoremap <space>n :action StepOver<CR>
+nnoremap <space>e :action Resume<CR>
+nnoremap <space>s :action SurroundWith<CR>
+nnoremap <space>d :action ShowUmlDiagramPopup<CR>
+
+
+nnoremap <space>rm :action Run<CR>
+nnoremap <space>rc :action DebugClass<CR>
+nnoremap <space>rd :action Debug<CR>
+nnoremap <space>rs :action Stop<CR>
+nnoremap <space>rb :action runShellFileAction<CR>
+
+nnoremap <space>wd :action HideAllWindows<CR>
+nnoremap <space>wt :action ActivateTerminalToolWindow<CR>
+nnoremap <space>wv :action ActivateVersionControlToolWindow<CR>
+" nnoremap <space>ww :action Switcher<CR>
+
+
+nnoremap <space>pw :action OpenProjectWindows<CR>
+nnoremap <space>pe :action RecentProjectListGroup<CR>
+nnoremap <space>pc :action CloseProject<CR>
+" nnoremap <space>ph :action PreviousProjectWindow<CR>
+" nnoremap <space>pl :action NextProjectWindow<CR>
+
+
+nnoremap <space>fw :action SelectInProjectView<CR>
+nnoremap <space>fe :action RecentFiles<CR>
+nnoremap <space>fc :action CloseContent<CR>
+nnoremap <space>fd :action CloseAllEditorsButActive<CR>
+nnoremap <space>fo :action FindInPath<CR>
+nnoremap <space>ff :action ReformatCode<CR>
+nnoremap <space>fh :action LocalHistory.ShowHistory<CR>
+nnoremap <space>fm :action ActivateStructureToolWindow<CR>
+nnoremap <space>fs :action DatabaseView.GoToScriptsDirectory<CR>
+
+
+
+nnoremap <space>gd :action GotoDeclaration<CR>
+nnoremap <space>gi :action GotoImplementation<CR>
+nnoremap <space>gs :action GotoSuperMethod<CR>
+
+
+
+
+
+" ============PLUGIN===========
+" 成对出现
+set surround
+" set multiple-cursors
+" easyMotion 模拟，额外依赖插件：AceJump,IdeaVim-EasyMotion
+set easymotion
+" 注释插件模拟
+set commentary
+" highlight searches
+set hlsearch
+" do incremental searching, search as you type
+set incsearch
+" ignore case when searching
+set ignorecase
+" no ignorecase if Uppercase char present
+set smartcase
+" 使用系统粘贴板(vim用y粘贴的内容也可以通过command + c 粘贴)
+set clipboard=unnamedplus
+"v模式下保持英文
+set keep-english-in-normal-and-restore-in-insert
+map f :action AceAction<CR>
