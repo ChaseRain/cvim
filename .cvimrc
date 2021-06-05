@@ -1,22 +1,38 @@
 
+let @@rili = 'https://calendar.google.com/calendar/u/0/r?hl=zh-CN'
+let @@paiqi = 'https://shimo.im/sheets/JD8piHb5NPc60GxM/FEKg3'
+let @@cvimset = 'chrome-extension://ihlenndgcmojhcghmfjfneahoeklbjjh/pages/options.html'
+let @@youdaomm = 'https://note.youdao.com/web/#/file/89C2F29AF2CD4E558AD765D689E3F404/note/E41F5C1014D0435CB544BE2FE287EBC4/?search=%E5%AF%86%E7%A0%81'
+let @@wiki = 'https://wiki-dev.pc.com.cn/collector/pages.action?key=SPC'
+let @@youtube = 'https://www.youtube.com/'
+let @@jdk = 'https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/util/Queue.html'
+let @@youdaotodo = 'https://note.youdao.com/web/#/file/recent/note/WEB4580577f645c23abaac02e1a8c674608/'
+let @@shimotodo = 'https://shimo.im/sheets/hyHEiRnMSEUJIHT7/yXcE5'
+
+map i v
+map <Space>grl :tabnew @@rili<CR>
+map <Space>gsm :tabnew @@paiqi<CR>
+map <Space>gss :tabnew @@cvimset<CR>
+map <Space>gmm :tabnew @@youdaomm<CR>
+map <Space>gtd :tabnew @@shimotodo<CR>
+map <Space>gwk :tabnew @@wiki<CR>
+map <Space>gg  :tabnew<Space>
+map <Space><Space>  :tabnew<Space>
+map <Space>gyt :tabnew @@youtube<CR>
+map <Space>gjdk :tabnew @@jdk<CR>
 map <Space>j goBack
 map <Space>k goForward
 map <Space>h previousTab
 map <Space>l nextTab
-map <Space>o :bookmarks!<Space>
-
+map <Space>o nextTab
 map [ scrollPageUp
 map ] scrollPageDown
 map R reloadTabUncached
-
-
+map o :bookmarks!<Space>
+map <Space>fw :buffer 1
 map <Space>fe :buffer<Space>
 map <Space>fc closeTab
 map <Space>fd closeTabsToRight
-
-map <Space><Space>  :tabnew<Space>
 map <Space>p :pintab<CR>
 map <Space>n :unpintab<CR>
 map <Space>m createBookmark
-
-
