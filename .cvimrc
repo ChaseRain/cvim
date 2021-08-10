@@ -1,4 +1,4 @@
-let @@rili = 'https://calendar.google.com/calendar/u/0/r/month/2021/6/1?hl=zh-CN'
+let @@rili = 'https://calendar.google.com/calendar/u/0/r/month/2021/7/1?hl=zh-CN'
 let @@paiqi = 'https://shimo.im/sheets/JD8piHb5NPc60GxM/FEKg3'
 let @@cvimset = 'chrome-extension://ihlenndgcmojhcghmfjfneahoeklbjjh/pages/options.html'
 let @@youdaomm = 'https://note.youdao.com/web/#/file/89C2F29AF2CD4E558AD765D689E3F404/note/E41F5C1014D0435CB544BE2FE287EBC4/?search=%E5%AF%86%E7%A0%81'
@@ -12,7 +12,17 @@ let @@qianduan = 'https://www.kdocs.cn/l/cvnmxJupVYzg'
 let @@youdao = 'https://note.youdao.com/web/#/file/recent/note/WEBe11b2c48a90e14ddebce790c40ec59f9/'
 let @@oa = 'https://oa.pc.com.cn/login.do'
 let @@inm = 'http://inm.pc.com.cn/admin/login.jsp'
-
+let @@lixiang = 'https://www.kdocs.cn/l/cpHNHLtaJLax'
+let @@daojishi = 'http://www.daojishiqi.com/riqidaojishi.asp'
+let @@shimo = 'https://shimo.im/recent'
+let @@naotu = 'https://naotu.baidu.com/file/5b41e6c2ab7c3f20257dd7dba05f6b99'
+let @@linggan = 'https://note.youdao.com/web/#/file/recent/note/WEBbb8a9c6cf90aa2333ff63cc92377e751/'
+let @@github = 'https://github.com/ChaseRain?tab=repositories'
+let @@jisuanqi = 'https://www.google.com.hk/search?q=%E8%AE%A1%E7%AE%97%E5%99%A8'
+let @@jianli = 'https://shimo.im/docs/5bqnzPpr8EUnrDqy'
+let @@rishiqing = 'https://www.rishiqing.com/app/todo/day'
+let @@aoyun = 'https://olympics.com/tokyo-2020/olympic-games/en/results/all-sports/medal-standings.htm'
+let @@git = 'https://note.youdao.com/web/#/file/recent/note/WEB3a44f679cc11eca8d67f6d7703dfbaf5/?search=git'
 
 
 map i v
@@ -31,6 +41,17 @@ map <Space>gqd :tabnew @@qianduan<CR>
 map <Space>gyd :tabnew @@youdao<CR>
 map <Space>goa :tabnew @@oa<CR>
 map <Space>ginm :tabnew @@inm<CR>
+map <Space>glx :tabnew @@lixiang<CR>
+map <Space>gdjs :tabnew @@daojishi<CR>
+map <Space>gsm :tabnew @@shimo<CR>
+map <Space>gnt :tabnew @@naotu<CR>
+map <Space>glg :tabnew @@linggan<CR>
+map <Space>ggh :tabnew @@github<CR>
+map <Space>gjsq :tabnew @@jisuanqi<CR>
+map <Space>gjl :tabnew @@jianli<CR>
+map <Space>grs :tabnew @@rishiqing<CR>
+map <Space>gay :tabnew @@aoyun<CR>
+map <Space>git :tabnew @@git<CR>
 
 
 map <Space>j goBack
@@ -49,4 +70,3 @@ map <Space>fd closeTabsToRight
 map <Space>p :pintab<CR>
 map <Space>n :unpintab<CR>
 map <Space>m createBookmark
-

@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a0e0e6fe-8d17-44b0-b61e-f30f0aeeceb3" name="Default Changelist" comment="" />
+    <list default="true" id="a0e0e6fe-8d17-44b0-b61e-f30f0aeeceb3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.cvimrc" beforeDir="false" afterPath="$PROJECT_DIR$/.cvimrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ideavimrc" beforeDir="false" afterPath="$PROJECT_DIR$/.ideavimrc" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -85,6 +89,8 @@
       <workItem from="1621688190113" duration="71000" />
       <workItem from="1621820852556" duration="743000" />
       <workItem from="1622861856464" duration="67000" />
+      <workItem from="1624327114290" duration="876000" />
+      <workItem from="1628569734764" duration="155000" />
     </task>
     <servers />
   </component>

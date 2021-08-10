@@ -2,12 +2,18 @@
 inoremap jk  <Esc>
 nnoremap sh   ^
 nnoremap sl   $
-nnoremap [   {
-nnoremap ]   }
+nnoremap [  <C-b>
+nnoremap ]  <C-f>
+
+
 " Redo
 nnoremap U   <C-r>
 nnoremap e   :action Console.Jdbc.Execute<CR>
 nnoremap vir :action RenameElement<CR>
+nnoremap vv v$
+
+
+
 
 " ============LEADER===========
 " 重命名
@@ -21,9 +27,12 @@ nnoremap <leader>_ :action CollapseAllRegions<CR>
 nnoremap <leader>+ :action ExpandAllRegions<CR>
 
 " ============SPACE===========
-nnoremap <space>h :action Back<CR>
-nnoremap <space>l :action Forward<CR>
-nnoremap <space>o :action NextTab<CR>
+nnoremap <space><space> :action SearchEverywhere<CR>
+
+nnoremap <space>j :action Back<CR>
+nnoremap <space>k :action Forward<CR>
+nnoremap <space>h :action PreviousTab<CR>
+nnoremap <space>l :action NextTab<CR>
 nnoremap <space>- :action SplitHorizontally<CR>
 nnoremap <space>\ :action SplitVertically<CR>
 nnoremap <space>b :action ToggleLineBreakpoint<CR>
@@ -31,6 +40,12 @@ nnoremap <space>n :action StepOver<CR>
 nnoremap <space>e :action Resume<CR>
 nnoremap <space>s :action SurroundWith<CR>
 nnoremap <space>d :action ShowUmlDiagramPopup<CR>
+nnoremap <space>o :action ActivateTerminalToolWindow<CR>
+nnoremap <space>p :action PinActiveTab<CR>
+
+
+nnoremap <space>ch :action LocalHistory.ShowHistory<CR>
+nnoremap <space>cb :action Git.CompareWithBranch<CR>
 
 
 nnoremap <space>rm :action Run<CR>
@@ -42,34 +57,32 @@ nnoremap <space>rb :action runShellFileAction<CR>
 nnoremap <space>wd :action HideAllWindows<CR>
 nnoremap <space>wt :action ActivateTerminalToolWindow<CR>
 nnoremap <space>wv :action ActivateVersionControlToolWindow<CR>
-" nnoremap <space>ww :action Switcher<CR>
-
-
-nnoremap <space>pw :action OpenProjectWindows<CR>
-nnoremap <space>pe :action RecentProjectListGroup<CR>
-nnoremap <space>pc :action CloseProject<CR>
-" nnoremap <space>ph :action PreviousProjectWindow<CR>
-" nnoremap <space>pl :action NextProjectWindow<CR>
+nnoremap <space>ww :action OpenProjectWindows<CR>
+nnoremap <space>we :action RecentProjectListGroup<CR>
+nnoremap <space>wc :action CloseProject<CR>
+nnoremap <space>wu :action PreviousProjectWindow<CR>
+nnoremap <space>wo :action NextProjectWindow<CR>
 
 
 nnoremap <space>fw :action SelectInProjectView<CR>
-nnoremap <space>fe :action RecentFiles<CR>
+nnoremap <space>fe :action SearchEverywhere<CR>
 nnoremap <space>fc :action CloseContent<CR>
 nnoremap <space>fd :action CloseAllEditorsButActive<CR>
 nnoremap <space>fo :action FindInPath<CR>
 nnoremap <space>ff :action ReformatCode<CR>
-nnoremap <space>fh :action LocalHistory.ShowHistory<CR>
-nnoremap <space>fm :action ActivateStructureToolWindow<CR>
 nnoremap <space>fs :action DatabaseView.GoToScriptsDirectory<CR>
-
+nnoremap <space>fp :action ShowFilePath<CR>
 
 
 nnoremap <space>gd :action GotoDeclaration<CR>
 nnoremap <space>gi :action GotoImplementation<CR>
 nnoremap <space>gs :action GotoSuperMethod<CR>
+nnoremap <space>gb :action Git.CompareWithBranch<CR>
+" nnoremap <space>gd :action DatabaseView.OpenDdlInConsole<CR>
 
 
-
+nnoremap <space>mm :action ActivateStructureToolWindow<CR>
+nnoremap <space>mv :action Maven.ExecuteGoal<CR>
 
 
 " ============PLUGIN===========
@@ -93,3 +106,6 @@ set clipboard=unnamedplus
 "v模式下保持英文
 set keep-english-in-normal-and-restore-in-insert
 map f :action AceAction<CR>
+
+
+set NERDTree
